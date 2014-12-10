@@ -1,0 +1,48 @@
+
+// Use Parse.Cloud.define to define as many cloud functions as you want.
+// For example:
+Parse.Cloud.define("hello", function(request, response) {
+//response.success("Hello world!");
+var Mailgun = require('mailgun');
+Mailgun.initialize('sandbox5628ca1816ee4ed789c00b27974ba171.mailgun.org', 'key-810c54eac8b4fc9ccb8664b26c9462d8');
+//response.success("OK1");
+Mailgun.sendEmail({
+  to: "yz785@cornell.edu",
+  from: "Mailgun@CloudCode.com",
+  subject: "Hello from Cloud Code!",
+  text: "Using Parse and Mailgun is great!"
+}, {
+  success: function(httpResponse) {
+    console.log(httpResponse);
+    response.success("Email sent!");
+  },
+  error: function(httpResponse) {
+    console.error(httpResponse);
+    response.error("Uh oh, something went wrong");
+  }
+});
+//response.success("OK2");
+
+});
+
+Parse.Cloud.beforeSave("Patients", function(request,response) {
+var Mailgun = require('mailgun');
+Mailgun.initialize('sandbox5628ca1816ee4ed789c00b27974ba171.mailgun.org', 'key-810c54eac8b4fc9ccb8664b26c9462d8');
+response.success("OK1");
+Mailgun.sendEmail({
+  to: "zhouyf249784@gmail.com",
+  from: "Mailgun@CloudCode.com",
+  subject: "Hello from Yanfeng!",
+  text: "You finally did it!"
+}, {
+  success: function(success) {
+    //console.log(httpResponse);
+    response.success("Email sent!");
+  },
+  error: function(error) {
+    //console.error(httpResponse);
+    response.error("Uh oh, something went wrong");
+  }
+});
+
+

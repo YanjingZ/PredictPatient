@@ -1,0 +1,3 @@
+curl -X POST \-H "X-Parse-Application-Id: EatKgcPelVGrhenkne7qVV4k23zSewada6mJe3n8" \-H "X-Parse-REST-API-Key: UWnG3kOqxI6N7uKoP7pFEzG1h6A7xV8oCFE0WNlA" \-H "Content-Type: application/json" \-d '{}' \https://api.parse.com/1/functions/hello
+
+curl -s --user 'api:key-810c54eac8b4fc9ccb8664b26c9462d8' \https://api.mailgun.net/v2/sandbox5628ca1816ee4ed789c00b27974ba171.mailgun.org/messages \-F from='Mailgun Sandbox <postmaster@sandbox5628ca1816ee4ed789c00b27974ba171.mailgun.org>' \-F to='Yanfeng <yz785@cornell.edu>'\-F subject='Hello Yanfeng' \-F text='Congratulations Yanfeng, you just sent an email with Mailgun!  You are truly awesome!

@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "DoctorPatient": {
+            "applicationId": "EatKgcPelVGrhenkne7qVV4k23zSewada6mJe3n8", 
+            "masterKey": "Gpn4NS4NG7wQ7MkWjjyuq0mZ646QSn7Jor11BUYt"
+        }, 
+        "_default": {
+            "link": "DoctorPatient"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.2"
+    }
+}
