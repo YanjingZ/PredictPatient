@@ -1,4 +1,4 @@
-MobileProject
+Doctor and Patient Appointment App
 =============
 
-MobileProject
+Folder MapView includes the web views for doctor client, showing the estimated arrival time of a list of patients and route on map
