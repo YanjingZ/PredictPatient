@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:id="@+id/doctorname"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:text="Doctor Name:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/apptaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:text="Appointment Address:"
+        android:textSize="18sp" 
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/appttime"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:text="Appointment Time:"
+        android:textSize="18sp" 
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:text="Your Location shall be shared 3 hours before the appointment to the doctor."
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
