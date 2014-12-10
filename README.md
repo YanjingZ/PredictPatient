@@ -5,4 +5,4 @@ Doctor and Patient Appointment App
   
   * MyCloudCode includes code for backend service
   * We-here Android App (Patient Side)- Includes the Android application for Patient Side
-  * Library- Includes the IPhone Application for the Doctor's Side
+  * DoctorApp- Includes the IPhone Application for the Doctor's Side
